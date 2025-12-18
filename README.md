@@ -2,6 +2,8 @@
 
 A professional portfolio website showcasing my expertise in Python, AI, and Machine Learning.
 
+🌐 **[View Live](https://Fo2sh88.github.io/My-personal-portfolio-/)** | 🔗 **[GitHub Repository](https://github.com/Fo2sh88/My-personal-portfolio-)**
+
 ## About Me
 
 I'm a Python AI Developer with a decade of analytical problem-solving experience from the public sector, combined with cutting-edge expertise in AI and machine learning. I build intelligent, impactful solutions that bridge data analysis with modern AI technologies.
@@ -32,8 +34,8 @@ I'm a Python AI Developer with a decade of analytical problem-solving experience
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Fo2sh88/portfolio.git
-cd portfolio
+git clone https://github.com/Fo2sh88/My-personal-portfolio-.git
+cd My-personal-portfolio-
 ```
 
 2. Start a local server:
@@ -65,6 +67,7 @@ portfolio/
 
 - 🔗 [GitHub](https://github.com/Fo2sh88)
 - 📧 Email: shouk88@gmail.com
+- 💼 Portfolio: https://Fo2sh88.github.io/My-personal-portfolio-/
 
 ## License
 

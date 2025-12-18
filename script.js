@@ -1,45 +1,69 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-    // --- Scroll Reveal Animation ---
-    const revealOnScroll = () => {
-        const reveals = document.querySelectorAll('.section-reveal');
-
-        reveals.forEach(element => {
-            const windowHeight = window.innerHeight;
-            const elementTop = element.getBoundingClientRect().top;
-            const elementVisible = 150;
-
-            if (elementTop < windowHeight - elementVisible) {
-                element.classList.add('show');
-            } else {
-                // Optional: remove class if you want the animation to re-trigger on scroll up
-                // element.classList.remove('show');
-            }
-        });
-    };
-
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Initial check on page load
-
-    // --- Active Navigation Link Highlighting ---
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.main-nav a');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (scrollY >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').slice(1) === current) {
-                link.classList.add('active');
-            }
-        });
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+  
+  menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('active');
+  });
+  
+  // Close mobile menu when clicking on a link
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      nav.classList.remove('active');
     });
+  });
+  
+  // Reveal animations on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  
+  function checkReveal() {
+    reveals.forEach(reveal => {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveal.getBoundingClientRect().top;
+      const elementVisible = 150;
+      
+      if (elementTop < windowHeight - elementVisible) {
+        reveal.classList.add('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', checkReveal);
+  checkReveal(); // Check on page load
+  
+  // Add reveal class to elements
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    section.classList.add('reveal');
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 70,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  // Header background on scroll
+  const header = document.getElementById('header');
+  
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.style.backgroundColor = 'rgba(10, 25, 47, 0.95)';
+    } else {
+      header.style.backgroundColor = 'rgba(10, 25, 47, 0.85)';
+    }
+  });
 });

@@ -1,164 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Shouk Andersson - Python AI Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Shouk Andersson | Python AI Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header id="main-header">
-        <div class="container">
-            <a href="#" class="logo">MSA</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact" class="btn-contact">Contact</a></li>
-                </ul>
-            </nav>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">MSA</a>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section id="hero">
-            <div class="container hero-content">
-                <!-- Add a professional photo of yourself in the images folder -->
-                <img src="images/profile-pic.jpg" alt="Mohamed Shouk Andersson" class="profile-img">
-                <div class="hero-text">
-                    <h1>Mohamed Shouk Andersson</h1>
-                    <p class="subtitle">Python AI Developer | Machine Learning Enthusiast</p>
-                    <p>Bridging a decade of analytical problem-solving from the public sector with cutting-edge expertise in AI and machine learning to build intelligent, impactful solutions.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn-primary">View My Work</a>
-                        <a href="https://github.com/Fo2sh88" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
+  <main>
+    <section id="hero">
+      <div class="container">
+        <h1 class="big-heading">Hi, my name is</h1>
+        <h2 class="big-heading">Mohamed Shouk Andersson.</h2>
+        <h3 class="big-heading">I build things with code and data.</h3>
+        <p>I'm a Python AI Developer specializing in building intelligent applications that solve complex problems. Currently, I'm focused on building machine learning solutions at <a href="https://www.liu.se/" target="_blank" rel="noopener noreferrer">Linköping University</a>.</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Hello! I'm Mohamed, a Python AI Developer with a unique blend of technical expertise and public sector experience. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.</p>
+            
+            <p>My journey into tech wasn't traditional. For over a decade, I honed my skills in analytical problem-solving, stakeholder management, and data-driven decision-making while serving with Swedish government agencies. I learned to dissect complex situations, communicate intricate concepts clearly, and deliver results under regulatory frameworks.</p>
+            
+            <p>Fast-forward to today, I'm completing my Python AI Developer education at Teknikhögskolan in Gothenburg, with hands-on experience in machine learning, deep learning, and computer vision. My main focus these days is building accessible, inclusive products and digital experiences at <a href="https://www.liu.se/" target="_blank" rel="noopener noreferrer">Linköping University</a> for a variety of clients.</p>
+          </div>
+          <div class="about-img">
+            <div class="img-wrapper">
+              <img src="https://z-cdn-media.chatglm.cn/files/c39b251e-efae-4d8e-8d40-8d61a4bf9432.jpg?auth_key=1866025720-f1aaae1324304edba0bf5c6958046424-0-4241322d0d96df808f9d9f20379963e2" alt="Mohamed Shouk Andersson">
             </div>
-        </section>
-
-        <section id="about" class="section-reveal">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-grid">
-                    <p>I am a passionate Python AI Developer currently completing my education at Teknikhögskolan in Gothenburg. My journey into tech is powered by a strong foundation in analytical thinking and stakeholder management, honed over 10+ years within Swedish government agencies.</p>
-                    <p>I thrive on solving complex problems through code. My recent internship at Linköping University provided hands-on experience in optimizing computer vision algorithms, where I translated research requirements into robust Python modules. I am eager to apply my unique blend of technical skill and professional maturity to a challenging role where I can contribute to meaningful projects and continue to grow.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section-reveal">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Programming</h3>
-                        <p>Python (Advanced), HTML, CSS, JavaScript, Flask</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-brain"></i>
-                        <h3>AI / Machine Learning</h3>
-                        <p>TensorFlow, Keras, OpenCV, Data Analysis, ML Algorithms, Deep Learning, Neural Networks</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-tools"></i>
-                        <h3>Tools & Technologies</h3>
-                        <p>Git, Jupyter Notebooks, MS Office, Visma</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section-reveal">
-            <div class="container">
-                <h2 class="section-title">Featured Project</h2>
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>OCT Brush Project - Linköping University</h3>
-                        <p class="project-subtitle">Computer Vision & Algorithm Optimization</p>
-                        <p>Developed and optimized computer vision algorithms for a university research project to detect skin surfaces and quantify brushing time from image acquisitions.</p>
-                        <ul>
-                            <li>Created two robust Python modules to handle diverse brushing and non-brushing conditions.</li>
-                            <li>Improved the consistency and reliability of the image analysis workflow.</li>
-                            <li>Collaborated with academic stakeholders to align technical outputs with research goals.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Computer Vision</span>
-                        </div>
-                        <a href="https://github.com/Fo2sh88" target="_blank" class="btn-primary">View on GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section-reveal">
-            <div class="container">
-                <h2 class="section-title">Professional Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Machine Learning Developer</h3>
-                            <h4>Linköping University</h4>
-                            <span class="date">Oct 2024 - Dec 2024</span>
-                            <p>Optimized computer vision algorithms, developed Python modules, and collaborated with academic supervisors on the OCT Brush project.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Investigator</h3>
-                            <h4>Swedish Social Insurance Agency (Försäkringskassan)</h4>
-                            <span class="date">May 2021 - Present</span>
-                            <p>Conducted complex investigations, made legally-sound decisions, and managed stakeholder communications, honing analytical and problem-solving skills.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Employment Advisor</h3>
-                            <h4>Swedish Public Employment Service (Arbetsförmedlingen)</h4>
-                            <span class="date">Jul 2016 - May 2021</span>
-                            <p>Guided job seekers, managed complex investigations for financial support, and coordinated with various agencies.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section-reveal">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p>I am currently looking for opportunities as a Junior Python AI Developer or Backend Developer. If you're interested in my profile, I'd love to hear from you!</p>
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> mfouadshouk@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +46 (0)70 436 32 41</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/mohamed-shouk-b4831191" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Fo2sh88" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Mohamed Shouk Andersson. All Rights Reserved.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Where I've Worked</h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <h3>Machine Learning Developer <span>@ Linköping University</span></h3>
+            <p>October 2024 - December 2024</p>
+            <ul>
+              <li>Optimized computer vision algorithms for the OCT Brush project, detecting skin surfaces and quantifying brushing time across 12 image acquisitions</li>
+              <li>Developed and validated two Python modules to handle brushing and non-brushing conditions, enabling consistent analysis across diverse datasets</li>
+              <li>Streamlined image processing workflows, improving robustness of skin-surface detection and brushing-time identification</li>
+            </ul>
+          </div>
+          
+          <div class="experience-item">
+            <h3>Investigator <span>@ Swedish Social Insurance Agency</span></h3>
+            <p>May 2021 - Present</p>
+            <ul>
+              <li>Conducted qualified investigations and rendered decisions on sickness benefits in accordance with Swedish legislation and regulations</li>
+              <li>Managed complex cases requiring analysis of medical documentation, employment conditions, and legal frameworks</li>
+              <li>Maintained regular communication with insured individuals, employers, and healthcare providers to gather relevant information</li>
+            </ul>
+          </div>
+          
+          <div class="experience-item">
+            <h3>Employment Advisor <span>@ Swedish Public Employment Service</span></h3>
+            <p>July 2016 - May 2021</p>
+            <ul>
+              <li>Guided job seekers in identifying employment and educational opportunities aligned with their skills and goals</li>
+              <li>Assisted employers in recruitment processes, matching candidates to vacant positions</li>
+              <li>Managed complex investigations and rendered decisions on financial support for both job seekers and employers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Some Things I've Built</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="folder-icon">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Fo2sh88" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <h3>OCT Brush Project</h3>
+              <p>Computer vision algorithms for detecting skin surfaces and quantifying brushing time across multiple image acquisitions.</p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>OpenCV</li>
+                <li>TensorFlow</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="folder-icon">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Fo2sh88" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <h3>Deep Learning Image Classifier</h3>
+              <p>A convolutional neural network built with TensorFlow and Keras for multi-class image classification with high accuracy.</p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>TensorFlow</li>
+                <li>Keras</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="folder-icon">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Fo2sh88" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <h3>Flask Web Application</h3>
+              <p>A full-stack web application built with Flask framework for data visualization and machine learning model deployment.</p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="folder-icon">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Fo2sh88" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <h3>Data Analysis Dashboard</h3>
+              <p>Interactive data visualization dashboard using Pandas and Matplotlib for exploring complex datasets and generating insights.</p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="folder-icon">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Fo2sh88" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <h3>Machine Learning API</h3>
+              <p>RESTful API built with Django for serving machine learning predictions with authentication and rate limiting.</p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>Django</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="folder-icon">
+                  <i class="fas fa-folder"></i>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Fo2sh88" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <h3>Natural Language Processing</h3>
+              <p>Text classification and sentiment analysis tool using NLP techniques for extracting insights from unstructured text data.</p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>NLTK</li>
+                <li>Scikit-learn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="archive-link">
+          <a href="https://github.com/Fo2sh88" target="_blank" rel="noopener noreferrer">View the complete archive</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>R</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>C</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Frameworks & Libraries</h3>
+            <ul>
+              <li>TensorFlow</li>
+              <li>Keras</li>
+              <li>Flask</li>
+              <li>Django</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+              <li>OpenCV</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <ul>
+              <li>Machine Learning</li>
+              <li>Deep Learning</li>
+              <li>Computer Vision</li>
+              <li>Data Analysis</li>
+              <li>Data Cleaning</li>
+              <li>Git</li>
+              <li>MS Office</li>
+              <li>Visma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">What's Next?</h2>
+        <p>My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+        <a href="mailto:mfouadshouk@gmail.com" class="cta-button">Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://github.com/Fo2sh88" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/mohamed-shouk-b4831191" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="https://fo2sh88.github.io/My-personal-portfolio/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a>
+        </div>
+        <div class="footer-info">
+          <p>Designed & Built by Mohamed Shouk Andersson</p>
+          <p>&copy; 2024 Mohamed Shouk Andersson</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
